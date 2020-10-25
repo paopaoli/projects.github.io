@@ -4,6 +4,8 @@ var madre_aperto = false;
 
 $( document ).ready(function() {
     console.log( "ready!" );
+
+    //
     $("#mail-icon").click(function(){
       console.log("cliccato sull'icona");
       var mail_address = document.createElement("input");
@@ -19,12 +21,14 @@ $( document ).ready(function() {
 
 
     //hover thumb progetti
-    $("#madre h1").hover(
+    $(".project-item *").off('click');
+
+    $("#proj-mm h2.project-title").hover(
       function() {
-    $("#madre").addClass( "madre-thumb-hover " );
+    $("#proj-mm .project-hero .project-image video").addClass( "show-video-preview" );
       },
       function() {
-    $("#madre").removeClass( "madre-thumb-hover " );}
+    $("#proj-mm .project-hero .project-image video").removeClass( "show-video-preview" );}
     );
 
 
