@@ -83,7 +83,8 @@ $( document ).ready(function() {
 
               //imposto attivo il blocco dei progetti non il body
               //document.body.classList.add("project-active");
-              $(".proj-cont").addClass("project-active");
+              //$(".proj-cont").addClass("project-active");
+              document.getElementById("contenitproget").classList.add("project-active");
 
         //imposto attivo solo il progetto corrente?
               Array.from(projects.children).forEach((child) =>
@@ -141,7 +142,8 @@ $( document ).ready(function() {
           }, "close")
           .add(() => {
               //document.body.classList.remove("project-active");
-              $(".proj-cont").addClass("project-active");
+              //$(".proj-cont").addClass("project-active");
+              document.getElementById("contenitproget").classList.remove("project-active");
               Array.from(projects.children).forEach((child) => child.classList.remove("active"));
           });
   }
