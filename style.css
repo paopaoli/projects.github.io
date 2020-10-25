@@ -41,16 +41,22 @@ body {
   line-height: 48px;
 }
 #copy-link {
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  transition: opacity 1s easeInOut;
+  -webkit-transition: all 0.25s;
 }
 #mail-icon {
   cursor: pointer;
 }
 #mail-icon:hover + #copy-link {
-  display: inline;
+  /*display: inline;*/
+  opacity: 1 !important;
 }
 .bravo-on {
   display: inline !important;
+  opacity: 1 !important;
+
 }
 
 

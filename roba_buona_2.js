@@ -46,6 +46,7 @@ $( document ).ready(function() {
               width: "100%",
               height: "100%",
               borderRadius: "0px",
+              backgroundColor:"#f8f8f8",
               ease: Expo.easeInOut
           }, "scaleFS")
           .to(contenutoPagina, {
@@ -56,7 +57,7 @@ $( document ).ready(function() {
           .to(title, {
               duration,
               fontSize: "48px",
-              padding: "300px 50px",
+              padding: "30px 50px",
               ease: Expo.easeInOut
           }, "scaleFS")
           .to(hero, {
@@ -79,7 +80,11 @@ $( document ).ready(function() {
               if (projectPage.children.length > 1) {
                   projectPage.firstElementChild.remove();
               }
-              document.body.classList.add("project-active");
+
+              //imposto attivo il blocco dei progetti non il body
+              //document.body.classList.add("project-active");
+              $(".proj-cont").addClass("project-active");
+
         //imposto attivo solo il progetto corrente?
               Array.from(projects.children).forEach((child) =>
                   child.classList.remove("active")
@@ -94,7 +99,7 @@ $( document ).ready(function() {
                   opacity: 1
               });
               gsap.set(projectHero, {
-                  height: "180px",
+                  height: "auto",
                   backgroundColor:"white"
               });
           });
@@ -135,7 +140,8 @@ $( document ).ready(function() {
               ease: Expo.easeInOut
           }, "close")
           .add(() => {
-              document.body.classList.remove("project-active");
+              //document.body.classList.remove("project-active");
+              $(".proj-cont").addClass("project-active");
               Array.from(projects.children).forEach((child) => child.classList.remove("active"));
           });
   }
