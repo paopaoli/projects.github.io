@@ -1,0 +1,203 @@
+
+body {
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 70px 50px;
+  box-sizing: border-box;
+  background: linear-gradient(225deg, #d3e4ff, #ffe4b9);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationBG 6s ease infinite;
+  -moz-animation: AnimationBG 6s ease infinite;
+  animation: AnimationBG 6s ease infinite;
+}
+@-webkit-keyframes AnimationBG {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes AnimationBG {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes AnimationBG {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+
+.home-container p {
+  margin: 0 0 48px 0;
+  font-size: 40px;
+  line-height: 48px;
+}
+#copy-link {
+  display: none;
+}
+#mail-icon {
+  cursor: pointer;
+}
+#mail-icon:hover + #copy-link {
+  display: inline;
+}
+.bravo-on {
+  display: inline !important;
+}
+.work-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  /*display: grid;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*grid-template-columns: 1fr 1fr;*/
+}
+.project-page {
+  padding: 70px 200px 120px 50px;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+}
+.row-project {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  /*display: flex;*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.thumb-full {
+  width: 100%;
+  /*grid-column-start: 1;*/
+  /*grid-column-end: 3;*/
+  height: auto;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+}
+.thumb-half-left {
+  /*width: 50vw;*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: auto;
+}
+.thumb-half-right {
+  /*width: 50vw;*/
+  /*grid-column-start: 2;*/
+  /*grid-column-end: 3;*/
+  height: auto;
+}
+.thumb-half {
+  width: 50%;
+  height: auto;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+}
+
+h1.project-title {
+  font-size: 60px;
+  line-height: 72px;
+  mix-blend-mode: difference;
+  color: white;
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+#madre {
+  background-color: #4264F4;
+  float: left;
+  height: 100%;
+}
+.madre-thumb-hover {
+  background-image: url("https://cdn.lowgif.com/full/27a74831b76cf2e8-free-funny-kid-gif-by-the-videobook-find-share-on-giphy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#grc {
+  background-color: #098B3C;
+  float: right;
+}
+#combo {
+  background-color: #FF9E55;
+}
+#oi {
+  background-color: #FFC936;
+}
+#mondadori {
+  background-color: #CB17DD;
+}
+#maxxi {
+  background-color: #6F55FF;
+}
+#leftloft {
+  background-color: #FF6F55;
+}
+#magnetimarelli {
+  background-color: pink;
+}
+#doodle {
+  background-color: green;
+}
+.opened-project {
+  /*grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100vh;*/
+  width: 100%;
+  height: 200vh !important;
+  background-image: none;
+  background-color: #EAEAEA !important;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+}
+.opened-project-w {
+  /*grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100vh;*/
+  width: 100%;
+  background-image: none;
+  background-color: #EAEAEA !important;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+}
+.opened-project-h {
+  /*grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100vh;*/
+  height: 100vh;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
+  transition: all .5s ease-in-out !important;
+}
