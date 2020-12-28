@@ -1,3 +1,4 @@
+/*
 $( document ).ready(function() {
 
   const projectGrid = document.getElementById("project-grid");
@@ -160,4 +161,4 @@ $( document ).ready(function() {
       const scrollDuration = seconds * percent;
       return scrollDuration;
   }
-});
+});*/
